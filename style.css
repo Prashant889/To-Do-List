@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #617377;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 35%;
+  min-height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.heading h2{
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+.heading h2 span{
+  color: red;
+}
+.to-do-list{
+  display: flex;
+  justify-content: center;
+}
+.to-do-list input{
+  width: 80%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(226, 223, 223);
+  padding-left: .5rem;
+}
+button{
+  width: 30px;
+  height: 30px;
+  margin-left: .5rem;
+  background-color: red;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container ul li {
+  width: 80%;
+  list-style: none;
+  padding: .5rem .5rem;
+  margin: .5rem auto;
+  position: relative;
+  cursor: pointer;
+}
+.container ul li i{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+.container ul li.cross{
+  text-decoration: line-through;
+}
